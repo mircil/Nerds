@@ -2,12 +2,168 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Тестовая страница</title>
+    <title>Дизайн-студия Нёрдс</title>
+     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <article class="post">
-      <h1>Какой-то текст</h1>
-      <p>Еще немного какого-то текста</p>
-    </article>
+    <header class="page-header">
+      <div class="container">
+        <div class="header-top clearfix">
+          <div class="header-logo">
+            <img src="#" alt="Nerds logo">
+          </div>
+          <nav class="main-menu">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <a href="#" class="cart-link">Корзина</a>
+          </div>
+        </div>
+        <div class="header-slider">
+          <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-1" name="toggle">
+            <input type="radio" id="btn-1" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+            <div class="slides">
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="slide-title">Долго, дорого, скрупулезно</div>
+                  <p>Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                  <a href="#" class="btn">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content-next">
+                  <div class="slide-title">Любим математику<br> 
+                  как никто другой</div>
+                  <p>Никакого креатива, только математические формулы <br>
+                  для расчета идеальных пропорций.</p>
+                  <a href="#" class="btn">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content-next">
+                  <div class="slide-title">Только ночь,<br>
+                  только хардкор</div>
+                  <p>Работать днем, как все? Мы против этого.<br>
+                  Ближе к полуночи работа только начинается.</p>
+                  <a href="#" class="btn">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="content-services clearfix">
+        <div class="content-services-item">
+          <img src="#" alt="Web sites">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn btn-red" href="">Заказать</a>
+        </div>
+        <div class="content-services-item">
+          <img src="#" alt="Applications">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn btn-green" href="">Заказать</a>
+        </div>
+        <div class="content-services-item">
+          <img src="#" alt="Presentation">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn btn-yellow" href="">Заказать</a>
+        </div>
+      </section>
+      <section class="content-about clearfix">
+        <div class="content-about-left">
+          <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="content-about-left-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="content-about-right">
+          <div class="content-about-right-img">
+            <img src="#" alt="Nerds logo">
+          </div>
+          <h3>с 2004 года Любим точность во всем:</h3>
+          <ul class="content-about-right-list">
+            <li><span>146</span><span>%</span>Уровень самоотдачи</li>
+            <li><span>100</span><span>%</span>Соблюдение сроков</li>
+            <li><span>50</span><span>%</span>Минимальная предоплата</li>
+          </ul>
+        </div>
+      </section>
+      <section class="content-partners">
+        <a href="#" class="content-partners-item"><img src="" alt=""></a>
+        <a href="#" class="content-partners-item"><img src="" alt=""></a>
+        <a href="#" class="content-partners-item"><img src="" alt=""></a>
+        <a href="#" class="content-partners-item"><img src="" alt=""></a>
+      </section>
+    </main>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6042731120472!2d30.322553872270884!3d59.93870842034711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1564650406591!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map-contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-popup" href="#">Напишите нам</a>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container clearfix">
+        <div class="footer-socials">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-vk" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-vk" href="#">Инстаграм</a>
+        </div>
+        <div class="footer-promo">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-form">
+      <form class="feedback-form" action="#" method="get">
+        <div class="form-field name-field">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="name-field">
+        </div>
+        <div class="form-field email-field">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email" placeholder="email@example.com" id="email-field">
+        </div>
+        <div class="form-field text-field">
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
+        </div>
+        <button class="btn btn-form-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-form-close" type="button" title="Закрыть">Закрыть</button>
+    </div>
   </body>
 </html>
