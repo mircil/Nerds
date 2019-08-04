@@ -6,7 +6,7 @@ body {
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: normal;
 	font-style: normal;
 
 	color: #000000;
@@ -39,6 +39,14 @@ body {
 .header-logo img {
 	widows: 160px;
 	height: 65px;
+}
+
+.header-logo img:hover {
+	opacity: 0.8;
+}
+
+.header-logo img:active {
+	opacity: 0.3;
 }
 
 .main-menu {
@@ -86,8 +94,8 @@ body {
 .cart-link {
 	position: relative;
 	margin-top: 82px;
-	margin-left: 25px;
-	padding-left: 45px;
+	padding-left: 40px;
+
 	display: inline-block;
 }
 
@@ -95,10 +103,106 @@ body {
 	content: "";
 	position: absolute;
 	top: 2px;
-	left: 20px;
+	left: 0px;
 	
 	width: 15px;
 	height: 15px;
 	
 	background: url("../img/sprite.png") no-repeat -42px -115px;
+}
+
+/* Slider */
+
+.slider {
+	position: relative;
+
+	width: 100%;
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+
+.slider input[type="radio"] {
+	display: none;
+}
+
+.slide {
+	height: 431px;
+	display: none;
+}
+
+.slide-content h2 {
+	margin: 0;
+	padding-top: 77px;
+	padding-bottom: 24px;
+
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: #000;
+}
+
+.slide-content p {
+	margin-bottom: 40px;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 95px;
+	left: 536px;
+	height: 18px;
+
+	text-align: center;
+
+	font-size: 0px;
+}
+
+.slider-controls label {
+	display: inline-block;
+	position: relative;
+
+	width: 8px;
+	height: 8px;
+	margin: 0 17px 0 0;
+
+	border-radius: 50%;
+	background-color: #fff;
+	border: 6px solid white;
+
+	cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+	box-shadow: inset 0px 0px 0px 2px #c1c1c1;
+}
+
+
+.slide:nth-child(1) {
+	background-image: url("../img/slider-item-1.png");
+	background-repeat: no-repeat;
+	background-position: 93% 18px;
+}
+
+.slide:nth-child(2) {
+	background-image: url("../img/slider-item-2.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+}
+
+.slide:nth-child(3) {
+	background-image: url("../img/slider-item-3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 20px;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
 }
