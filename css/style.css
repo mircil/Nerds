@@ -12,13 +12,6 @@ body {
 	color: #000000;
 	background: #ffffff;
 }
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .container {
 	width: 1160px;
 	margin: 0 auto;
