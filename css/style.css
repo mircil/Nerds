@@ -873,3 +873,32 @@ body {
 }
 
 /* End of footer */
+
+/* Catalog styles */
+
+.inner-page {
+}
+
+.catalog-header {
+	min-width: 355px;
+	background-color: #eee;
+}
+
+.header-title {
+	margin: 0 auto;
+	padding-top: 195px;
+	padding-bottom: 110px;
+
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+
+.filter {
+	width: 260px;
+}
+
+.catalog {
+	width: 760px;
+}
