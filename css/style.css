@@ -239,12 +239,14 @@ body {
 }
 
 .slider .btn:hover,
-.btn-modal:hover {
+.btn-modal:hover,
+.btn-form-send:hover {
 	background-color: #e74246;
 }
 
 .slider .btn:active,
-.btn-modal:active {
+.btn-modal:active,
+.btn-form-send:active {
 	background-color: #d7373b;
 	box-shadow: inset 0 3px #c13135;
 }
@@ -325,6 +327,7 @@ body {
 .content-services-item h2 {
 	margin: 0;
 	margin-top: 24px;
+	margin-bottom: 23px;
 
 	font-size: 24px;
 	line-height: 30px;
@@ -545,8 +548,7 @@ body {
 	top: 50%;
 	left: 50%;
 
-	width: 219px;
-	height: 208px;
+	width: 220px;
 	padding: 53px 50px 47px 50px;
 
 	background-color: #fff;
@@ -555,7 +557,7 @@ body {
 
 .map-contacts h3 {
 	margin: 0;
-	margin-bottom: 32px;
+	margin-bottom: 24px;
 
 	font-size: 18px;
 	line-height: 30px;
@@ -563,7 +565,8 @@ body {
 }
 
 .map-contacts p {
-	margin-bottom: 34px;
+	margin: 0;
+	margin-top: 24px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -571,10 +574,15 @@ body {
 	color: #666666;
 }
 
+.map-contacts p:last-of-type {
+	margin-top: 19px;
+}
+
 .btn-modal {
 	padding: 18px 44px;
 	height: 14px;
 	width: 131px;
+	margin-top: 35px;
 
 	background-color: #fb565a;
 }
@@ -585,9 +593,8 @@ body {
 
 .modal {
 	display: none;
-	padding: 73px 90px 84px 98px;
+	padding: 70px 100px 84px 100px;
 	width: 760px;
-	height: 403px;
 	position: fixed;
 	top: 156px;
 	left: 50%;
@@ -605,16 +612,167 @@ body {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
+	padding: 16px 0 16px 0;
+}
+
+.modal-form-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+
+	width: 21px;
+	height: 21px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.3;
+
+	font-size: 0;
+}
+
+.modal-form-close:hover {
+	opacity: 1;
+}
+
+.modal-form-close:active {
+	opacity: 0.1;
+}
+
+.modal-form-close::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+
+	width: 21px;
+	height: 4px;
+
+	transform: rotate(45deg);
+	background-color: #fb565a;
+}
+
+.modal-form-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+
+	width: 21px;
+	height: 4px;
+
+	transform: rotate(-45deg);
+	background-color: #fb565a;	
 }
 
 .modal h2 {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 34px;
 
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+}
+
+.feedback-form {
+	position: relative;
+}
+
+.feedback-form-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 6px;
+	padding: 16px;
+
+	line-height: 18px;
+	font-size: 16px;
+
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+}
+
+.feedback-form textarea {
+	min-height: 118px;
+	margin-bottom: 24px;
+	padding: 13px;
+}
+
+.name-field,
+.email-field {
+	width: 360px;
+}
+
+.btn-form-send {
+	border: none;
+	width: 260px;
+	height: 50px;
+
+	background-color: #fb565a;
+}
+
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+	border-color: #b4b9bb;
+}
+
+.feedback-form input:focus::-webkit-input-placeholder,
+.contacts-form textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:focus:-ms-input-placeholder,
+.feedback-form textarea:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:focus::-ms-input-placeholder,
+.feedback-form textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:focus::placeholder,
+.feedback-form textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:invalid {
+	color: #e74246;
+
+	border-color: #e74246;
 }
 
 /* End of Modal-form */
