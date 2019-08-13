@@ -19,9 +19,7 @@ body {
 }
 
 .btn {
-	display: block;
-	height: auto;
-	width: auto;
+	display: inline-block;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -282,9 +280,7 @@ ul.user-menu-list {
 }
 
 .content-services-item .btn {
-	padding: 17px 38px;
-	height: 16px;
-	width: 84px;
+	padding: 16px 40px;
 }
 
 .btn-red {
@@ -357,10 +353,15 @@ ul.user-menu-list {
 
 }
 
+.content-services-item img {
+	display: block;
+	width: 300px;
+	height: 146px;
+}
+
 .content-services-item h2 {
 	margin: 0;
-	margin-top: 24px;
-	margin-bottom: 23px;
+	padding: 23px 0 17px 0;
 
 	font-size: 24px;
 	line-height: 30px;
@@ -371,7 +372,8 @@ ul.user-menu-list {
 	max-width: 260px;
 
 	margin: 0;
-	margin-bottom: 35px;
+	padding: 0;
+	padding-bottom: 33px;
 
 	font-size: 16px;
 	line-height: 24px;
@@ -404,12 +406,11 @@ ul.user-menu-list {
 	display: flex;
 	flex-direction: column;
 	max-width: 660px;
+	padding-top: 33px;
 }
 
 .content-about-left h1 {
 	margin: 0;
-	margin-top: 30px;
-	margin-bottom: 35px;
 
 	font-size: 45px;
 	line-height: 45px;
@@ -417,11 +418,19 @@ ul.user-menu-list {
 }
 
 .content-about-left h3 {
-	margin-top: 40px;
+	margin: 0px;
+	padding: 39px 0 24px;
 
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.content-about-left p {
+	padding: 32px 0 0 0;
+	margin: 0;
+
+	line-height: 24px;
 }
 
 .content-about-left-list {
@@ -480,13 +489,20 @@ ul.user-menu-list {
  	display: -ms-flexbox;
 	display: flex;
 	
-	margin-top: 50px;
+	margin-top: 60px;
 
 	list-style: none;
 }
 
 .about-item-right {
 	max-width: 33%;
+}
+
+.content-about-right img {
+	display: block;
+    width: 360px;
+    height: 208px;
+    margin: 0;
 }
 
 .about-item-right span {
@@ -497,10 +513,10 @@ ul.user-menu-list {
 
 .about-item-right sup {
 	position: relative;
-	top: -10px;
-	left: -2px;
+	top: -12px;
+	left: 2px;
 
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
 }
 
