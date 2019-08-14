@@ -221,7 +221,8 @@ ul.user-menu-list {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-	box-shadow: inset 0px 0px 0px 2px #c1c1c1;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #c1c1c1;
+	        box-shadow: inset 0px 0px 0px 2px #c1c1c1;
 }
 
 
@@ -278,7 +279,8 @@ ul.user-menu-list {
 .btn-form-send:active,
 .catalog-btn:active {
 	background-color: #d7373b;
-	box-shadow: inset 0 3px #c13135;
+	-webkit-box-shadow: inset 0 3px #c13135;
+	        box-shadow: inset 0 3px #c13135;
 }
 
 .content-services-item .btn {
@@ -295,7 +297,8 @@ ul.user-menu-list {
 
 .btn-red:active {
 	background-color: #d7373b;
-	box-shadow: inset 0 3px #c13135;
+	-webkit-box-shadow: inset 0 3px #c13135;
+	        box-shadow: inset 0 3px #c13135;
 }
 
 .btn-green {
@@ -308,7 +311,8 @@ ul.user-menu-list {
 
 .btn-green:active {
 	background-color: #00aa62;
-	box-shadow: inset 0 3px #009958;
+	-webkit-box-shadow: inset 0 3px #009958;
+	        box-shadow: inset 0 3px #009958;
 }
 
 .btn-yellow {
@@ -321,7 +325,8 @@ ul.user-menu-list {
 
 .btn-yellow:active {
 	background-color: #e5a722;
-	box-shadow: inset 0 3px #ce961f;
+	-webkit-box-shadow: inset 0 3px #ce961f;
+	        box-shadow: inset 0 3px #ce961f;
 }
 
 /* end of button */
@@ -406,7 +411,10 @@ ul.user-menu-list {
 	display: -webkit-box;
  	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	max-width: 660px;
 	padding-top: 30px;
 }
@@ -472,7 +480,13 @@ ul.user-menu-list {
  	display: -ms-flexbox;
 	display: flex;
 	
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	
+	-webkit-box-direction: normal;
+	
+	    -ms-flex-direction: column;
+	
+	        flex-direction: column;
 	max-width: 360px;
 }
 
@@ -580,7 +594,9 @@ ul.user-menu-list {
 	height: 52px;
 
 	background-color: #eee;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .content-partners-item:last-child::after {
@@ -588,7 +604,9 @@ ul.user-menu-list {
 }
 
 .content-partners-item a {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
 
 .content-partners-item img {
@@ -624,7 +642,9 @@ ul.user-menu-list {
 	padding: 53px 50px 47px 50px;
 
 	background-color: #fff;
-	transform: translate(-580px, -50%);
+	-webkit-transform: translate(-580px, -50%);
+	    -ms-transform: translate(-580px, -50%);
+	        transform: translate(-580px, -50%);
 }
 
 .map-contacts h3 {
@@ -673,7 +693,8 @@ ul.user-menu-list {
 	margin-left: -480px;
 
 	background-color: #fff;
-	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+	-webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+	        box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal--show {
@@ -719,7 +740,11 @@ ul.user-menu-list {
 	width: 21px;
 	height: 4px;
 
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+
+	    -ms-transform: rotate(45deg);
+
+	        transform: rotate(45deg);
 	background-color: #fb565a;
 }
 
@@ -732,7 +757,11 @@ ul.user-menu-list {
 	width: 21px;
 	height: 4px;
 
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+
+	    -ms-transform: rotate(-45deg);
+
+	        transform: rotate(-45deg);
 	background-color: #fb565a;	
 }
 
@@ -761,7 +790,8 @@ ul.user-menu-list {
 
 .feedback-form input,
 .feedback-form textarea {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 100%;
 	margin-top: 6px;
 	padding: 16px;
@@ -812,6 +842,13 @@ ul.user-menu-list {
   opacity: 0.5;
 }
 
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder {
+  color: #444444;
+
+  opacity: 0.5;
+}
+
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
   color: #444444;
@@ -836,6 +873,16 @@ ul.user-menu-list {
 
 .feedback-form input:focus::-ms-input-placeholder,
 .feedback-form textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:focus::-webkit-input-placeholder,
+.feedback-form textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.feedback-form input:focus::-moz-placeholder,
+.feedback-form textarea:focus::-moz-placeholder {
   opacity: 1;
 }
 
@@ -870,7 +917,8 @@ ul.user-menu-list {
 	display: -webkit-box;
  	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 	width: 360px;
 	padding: 0;
@@ -913,9 +961,15 @@ ul.user-menu-list {
 
 .social-btn {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 78px;
 	height: 78px;
 
@@ -933,7 +987,11 @@ ul.user-menu-list {
 	top: 50%;
 	left: 50%;
 	
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	
+	    -ms-transform: translate(-50%, -50%);
+	
+	        transform: translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -992,9 +1050,14 @@ ul.user-menu-list {
 	background-color: #eee;
 }
 
+.header-logo {
+	width: 160px;
+	height: 65px;
+}
+
 .header-title {
 	margin: 0 auto;
-	padding-top: 85px;
+	padding-top: 78px;
 	padding-bottom: 110px;
 
 	font-weight: 500;
@@ -1272,7 +1335,8 @@ fieldset.fieldset-checkbox {
 
 .btn-filter:active {
 	background-color: #d5d5d5;
-	box-shadow: inset 0 3px #bfbfbf;
+	-webkit-box-shadow: inset 0 3px #bfbfbf;
+	        box-shadow: inset 0 3px #bfbfbf;
 
 	color: rgba(0, 0, 0, 0.3);
 }
@@ -1340,14 +1404,14 @@ fieldset.fieldset-checkbox {
 
 .catalog-sorting-direction {
 	display: -webkit-box;
- 	display: -ms-flexbox;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
 	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	align-items: center;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 60px;
 
 	font-size: 0;
@@ -1363,6 +1427,8 @@ fieldset.fieldset-checkbox {
   	border-right: 5.5px solid transparent;
   	border-bottom: 10px solid rgba(0, 0, 0, 0.2);
   	border-left: 5.5px solid transparent;
+
+  	line-height: 0;
 }
 
 .catalog-sorting-direction a:hover,
@@ -1376,15 +1442,26 @@ fieldset.fieldset-checkbox {
 
 .sorting-direction-current a {
 	border-bottom-color: #000;
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+.catalog-items {
+	margin-bottom: 41px;
 }
 
 .catalog-items-list {
-	display: grid;
-	grid-template-columns: 360px 360px;
-	grid-column-gap: 40px;
-	grid-template-rows: 616px 616px 616px;
-	grid-row-gap: 33px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-items-list .catalog-item::before {
@@ -1410,6 +1487,7 @@ fieldset.fieldset-checkbox {
 
 .catalog-item {
 	position: relative;
+	margin-bottom: 26px;
 }
 
 .catalog-item-description {
@@ -1430,7 +1508,8 @@ fieldset.fieldset-checkbox {
 }
 
 .catalog-item:hover {
-	box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+	-webkit-box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+	        box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .catalog-item-description {
@@ -1466,7 +1545,6 @@ fieldset.fieldset-checkbox {
 	display: -webkit-box;
  	display: -ms-flexbox;
 	display: flex;
-	margin-top: 60px;
 }
 
 .pagination a {
@@ -1489,7 +1567,8 @@ fieldset.fieldset-checkbox {
 
 .pagination .current {
 	background-color: #fff;
-	box-shadow: inset 0 0 0 3px #dbdbdb;
+	-webkit-box-shadow: inset 0 0 0 3px #dbdbdb;
+	        box-shadow: inset 0 0 0 3px #dbdbdb;
 }
 
 .pagination a:hover,
@@ -1500,11 +1579,12 @@ fieldset.fieldset-checkbox {
 .pagination a:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
-	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination .next-page {
-	padding: 16px 76px;
+	padding: 16px 78px;
 }
 
 	/* End of Catalog inner */
