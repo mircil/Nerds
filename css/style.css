@@ -6,6 +6,7 @@ body {
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
+	line-height: 24px;
 	font-weight: normal;
 	font-style: normal;
 
@@ -20,6 +21,7 @@ body {
 
 .btn {
 	display: inline-block;
+	vertical-align: middle;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -205,13 +207,13 @@ ul.user-menu-list {
 	display: inline-block;
 	position: relative;
 
-	width: 6px;
-	height: 6px;
+	width: 8px;
+	height: 8px;
 	margin: 0 17px 0 0;
 
 	border-radius: 50%;
 	background-color: #fff;
-	border: 6px solid white;
+	border: 4px solid white;
 
 	cursor: pointer;
 }
@@ -406,7 +408,7 @@ ul.user-menu-list {
 	display: flex;
 	flex-direction: column;
 	max-width: 660px;
-	padding-top: 33px;
+	padding-top: 30px;
 }
 
 .content-about-left h1 {
@@ -446,7 +448,7 @@ ul.user-menu-list {
 .content-about-left-list li {
 	position: relative;
 
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	padding-left: 35px;
 
 	color: #283136;
@@ -476,7 +478,7 @@ ul.user-menu-list {
 
 .content-about-right h3 {
 	margin: 0;
-	margin-top: 35px;
+	margin-top: 30px;
 
 	font-size: 16px;
 	text-align: center;
@@ -610,6 +612,7 @@ ul.user-menu-list {
 
 	height: 416px;
 	margin-top: 80px;
+	margin-bottom: 69px;
 }
 
 .map-contacts {
@@ -853,8 +856,7 @@ ul.user-menu-list {
 
 .page-footer {
 	margin: 0;
-	margin-top: 69px;
-	margin-bottom: 70px;
+	padding-bottom: 70px;
 }
 
 .footer-inner {
@@ -868,10 +870,13 @@ ul.user-menu-list {
 	display: -webkit-box;
  	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 
-	max-width: 260px;
+	width: 360px;
+	padding: 0;
 	margin: 0;
-	margin-right: 137px;
+	margin-right: 40px;
+	list-style: none;
 }
 
 .footer-promo {
@@ -881,6 +886,7 @@ ul.user-menu-list {
 	flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	max-width: 560px;
+	padding-top: 6px;
 }
 
 .footer-promo h3 {
@@ -901,17 +907,24 @@ ul.user-menu-list {
 	color: #444444;
 }
 
+.footer-socials li {
+	margin-right: 13px;
+}
+
 .social-btn {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 78px;
 	height: 78px;
-	margin-right: 13px;
-	
-	font-size: 0;
-	text-decoration: none;
 
 	background-color: #eee;
 	border-radius: 50%;
+
+	font-size: 0;
+	text-decoration: none;
+
 }
 
 .social-btn::before {
@@ -927,6 +940,7 @@ ul.user-menu-list {
 }
 
 .social-btn:hover {
+	cursor: pointer;
 	background-color: #e74246;
 }
 
